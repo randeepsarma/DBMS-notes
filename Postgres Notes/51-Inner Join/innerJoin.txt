@@ -1,0 +1,2 @@
+//USED to join tables and display only those data which is linked 
+SELECT * FROM person JOIN car ON person.car_id=car.id;

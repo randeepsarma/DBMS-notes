@@ -1,0 +1,6 @@
+//Steps To create a file based on joined tables
+//1)Join the tables using Left Join
+SELECT * FROM person LEFT JOIN car ON car.id=person.car._id;
+//3)Make the csv file
+\copy (SELECT * FROM person LEFT JOIN car ON car.id=person.car_id) TO
+ '/PERN/ch2/54-CSVFile/results.csv' DELIMITER ',' CSV HEADER;

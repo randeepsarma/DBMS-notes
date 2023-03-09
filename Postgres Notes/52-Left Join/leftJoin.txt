@@ -1,0 +1,5 @@
+//Gives us people who dont have a car as well as people who have one
+SELECT * FROM person LEFT JOIN car ON car.id=person.car_id;
+
+//Gives us only those people who dont have a car
+SELECT * FROM person LEFT JOIN car ON car.id=person.car_id WHERE car.* IS NULL;

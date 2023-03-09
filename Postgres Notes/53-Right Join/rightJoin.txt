@@ -1,0 +1,2 @@
+//Gives us cars which are not alloted to anyone
+SELECT * FROM person RIGHT JOIN car ON car.id=person.car_id;

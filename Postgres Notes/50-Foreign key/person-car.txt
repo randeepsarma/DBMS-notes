@@ -1,0 +1,4 @@
+//Adding foreign key constraint that is unique and non replicable
+UPDATE person SET car_id=2 where id=1;
+
+
